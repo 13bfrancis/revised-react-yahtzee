@@ -6,6 +6,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import styled from 'styled-components';
+import Scorecard from './Scorecard';
 
 const styles = {
   grow: {
@@ -49,7 +50,7 @@ class App extends Component {
           </ToolBar>
         </AppBar>
         {value === 0 && <Typography variant="title">Game</Typography>}
-        {value === 1 && <Typography variant="title">Scorecard</Typography>}
+        {value === 1 && <Scorecard />}
       </Container>
     );
   }
